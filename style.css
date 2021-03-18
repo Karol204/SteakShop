@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 400vh;
+    
+}
+
+.main-container{
+    width: 100%;
+    height: 120vh;
+    background-image: url('/images/bbq-main-container-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    animation: slider 30s infinite;
+}
+
+.nav {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 10px 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    font-size: 30px;
+    margin: 0 25px;
+    transition: transform .1s;
+}
+
+.nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#greatings {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#greatings h1{
+    font-size: 76px;
+    letter-spacing: 7px;
+    margin: 20px 30px;
+}
+
+#greatings h5 {
+    font-size: 26px;
+    letter-spacing: 7px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#second-section {
+    background-color: #eee;
+    height: 80vh;
+}
+
+
+.reservation {
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: -5px 5px 15px 5px rgba(0,0,0,0.29);
+    width: 80%;
+    height: 150px;
+    border-radius: 8px;
+    margin: 0 auto;
+    z-index: 1;
+    transform: translateY(-75px);
+}
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    padding: 0 10px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+    display: block;
+    width: 100%;
+    padding:  15px 20px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+.form-control input:focus, .form-control input:valid {
+    outline: 0;
+}
+
+.form-control label {
+    position: absolute;
+    top: 20px;
+    padding-left: 15px;
+} 
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    transform: translateY(-30px)
+}
+
+.btn {
+    width: 250px;
+    margin: 0 20px 0 40px;
+    padding:  5px 15px;
+    border: 0;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+#img-about {
+    width: 450px;
+    height: 350px;
+}
+
+.about {
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.about h1 {
+    font-size: 37px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.about p {
+    font-size: 19px;
+}
+
+#third-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 700px;
+    text-align: center;
+    margin-top: 30px;
+}
+.text h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.text p {
+    line-height: 25px;
+}
+
+.offer-gallery {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offer {
+    text-align: center;
+}
+
+.offer h4 {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.offer h5 {
+    font-size: 18px;
+    margin: 15px;
+}
+
+.offer img {
+    z-index: 1;
+    width: 330px;
+    height: 280px;
+}
+
+.offer h4:hover {
+    color: green;
+}
+
+
+#fourth-section {
+    background-color: #eee;
+    height: 130vh;
+    width: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+#fourth-section .text h1{
+    margin: 50px auto;
+    padding-top: 50px;
+    width: 100vw;
+}
+
+.menu {
+    width: 80vw;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 0 auto 50px;
+    padding: 0;
+}
+
+
+.dashboard {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+}
+
+.dashboard li {
+    text-decoration: none;
+}
+
+.dashboard li a {
+    text-decoration: none;
+    color: #bbb;
+}
+
+.dashboard li a:hover {
+    color: #fff;
+}
+
+.food-menu {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 100px);
+    overflow: hidden;
+}
+
+.whole-item {
+    margin-bottom: 10px;
+}
+
+.price{
+     color: hotpink;
+     font-weight: bold;
+}
+
+.whole-item h4 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.desc{
+    line-height: 23px;
+    color: #666;
+}
+
+.price{
+    color: hotpink;
+    font-weight: bold;
+}
+
+.sixth-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    transition: 0.7 s;
+    z-index: -2;
+}
+
+.sixth-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.59);
+    z-index: -1;
+}
+
+.slider-container {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: -15vh;
+    left: -15vw;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.seventh-section {
+
+    height: 40vh;
+    transform: translateY(100px);
+}
+
+.props-container {
+    max-width: 1200px;
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.props {
+    position: relative;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+
+.props img {
+    width: 80px;
+    height: 80px;
+    transition: 0.8s;
+}
+
+.props:hover img {
+    transform: translateY(-15px);
+}
+
+.newsletter {
+    background-image: url('/images/wood-backg.jpg');
+    height: 70vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h2 {
+    font-size: 48px;
+    color: #222;
+    margin: 30px;
+}
+
+.newsletter input {
+    height: 50px;
+    width: 550px;
+    border-radius: 3px;
+    border:0;
+    margin: 0 30px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.newsletter button {
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+footer ul {
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    color: #fff;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+.border {
+  border-right: 2px solid #fff;
+}
+
+
+.inactive {
+    display: none;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url('/images/bbq-main-container-bg.jpg');
+    }
+    15% {
+        background-image: url('/images/bbq-main-container-bg.jpg');
+    }
+    60% {
+        background-image: url('/images/main-container-3.jpg');
+    }
+    75% {
+        background-image: url('/images/main-container-3.jpg');
+    }
+
+}
